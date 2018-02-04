@@ -1,0 +1,29 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+    <localRepository>.m2/repository</localRepository>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <id>Maven-Central-Artifactory</id>
+                    <name>Maven Central Artifactory</name>
+                    <url>https://repo.maven.apache.org/maven2</url>               
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                    <id>Maven-Central-Artifactory</id>
+                    <name>Maven Central Artifactory</name>
+                    <url>https://repo.maven.apache.org/maven2</url>  
+                </pluginRepository>
+            </pluginRepositories>
+            <id>mavencentral</id>           
+        </profile>          
+    </profiles>
+    <activeProfiles>
+        <activeProfile>mavencentral</activeProfile>
+    </activeProfiles>
+</settings>

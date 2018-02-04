@@ -1,0 +1,8 @@
+# Exclude maven local repository
+.m2/
+
+# Exclude .git folder
+.git/
+
+# Exclude all target directories containing compiled classes and resources
+**/target/
